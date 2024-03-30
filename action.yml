@@ -87,6 +87,7 @@ runs:
         # echo "plan_output<<$EOF" >> $GITHUB_OUTPUT
         # echo "$PLAN_OUTPUT" >> $GITHUB_OUTPUT
         # echo "$EOF" >> $GITHUB_OUTPUT
+        
 
         case $PLAN_RESULT in
           1)
