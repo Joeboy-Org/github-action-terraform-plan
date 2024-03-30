@@ -4,7 +4,7 @@ description: Performs a Terraform plan and returns the output
 
 inputs:
   tfDir:
-    description: The directory where the Terraform templates are
+    description: The directory where the Terraform templates are located
     required: false
     default: ""
   tfArgs:
