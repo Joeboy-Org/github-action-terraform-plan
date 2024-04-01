@@ -81,12 +81,12 @@ runs:
           PLAN_OUTPUT="The plan output was too big to comment. Please view the actions output for the plan results.";
         fi
         
-        echo "plan_output=$PLAN_OUTPUT" >> $GITHUB_OUTPUT
+        # echo "plan_output=$PLAN_OUTPUT" >> $GITHUB_OUTPUT
 
-        # EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
-        # echo "plan_output<<$EOF" >> $GITHUB_OUTPUT
-        # echo "$PLAN_OUTPUT" >> $GITHUB_OUTPUT
-        # echo "$EOF" >> $GITHUB_OUTPUT
+        EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+        echo "plan_output<<$EOF" >> $GITHUB_OUTPUT
+        echo "$PLAN_OUTPUT" >> $GITHUB_OUTPUT
+        echo "$EOF" >> $GITHUB_OUTPUT
         
 
         case $PLAN_RESULT in
